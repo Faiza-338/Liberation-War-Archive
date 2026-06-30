@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="View a simple photograph gallery for the Liberation War Archive with categories and zoom feature.">
+  <meta name="keywords" content="Liberation War photographs, Bangladesh 1971 gallery, historical photos, archive gallery">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberation War Archive | Gallery</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-base-200 text-base-content">
+  <header class="bg-base-100 shadow-sm">
+    <nav class="navbar max-w-6xl mx-auto">
+      <div class="flex-1"><a href="index.html" class="text-xl font-bold">Liberation War Archive</a></div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1 hidden md:flex">
+          <li><a href="index.html">Home</a></li><li><a href="documents.html">Documents</a></li><li><a href="interviews.html">Interviews</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="dropdown dropdown-end md:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost">Menu</div>
+          <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
+            <li><a href="index.html">Home</a></li><li><a href="documents.html">Documents</a></li><li><a href="interviews.html">Interviews</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <section class="text-center mb-8">
+      <h1 class="text-4xl font-bold mb-3">Photographs Gallery</h1>
+      <p class="max-w-3xl mx-auto">This gallery shows simple photo records using online open-source placeholder images. Click the zoom button to see a larger image.</p>
+    </section>
+
+    <section class="mb-8">
+      <div class="flex flex-wrap gap-2 justify-center">
+        <button class="btn btn-sm btn-primary" onclick="filterGallery('All')">All</button>
+        <button class="btn btn-sm" onclick="filterGallery('Events')">Events</button>
+        <button class="btn btn-sm" onclick="filterGallery('Locations')">Locations</button>
+        <button class="btn btn-sm" onclick="filterGallery('People')">People</button>
+        <button class="btn btn-sm" onclick="filterGallery('Themes')">Themes</button>
+      </div>
+    </section>
+
+    <section id="galleryContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+
+    <dialog id="imageModal" class="modal">
+      <div class="modal-box max-w-4xl">
+        <h3 id="imageModalTitle" class="font-bold text-xl mb-4"></h3>
+        <img id="imageModalPhoto" src="" alt="Zoomed photo" class="w-full rounded-lg">
+        <p id="imageModalDescription" class="mt-4"></p>
+        <div class="modal-action"><form method="dialog"><button class="btn">Close</button></form></div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="footer footer-center bg-base-300 text-base-content p-6 mt-10"><aside><p>Copyright 2026 Liberation War Archive. Created for learning purpose.</p></aside></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Liberation War Archive is a simple online archive for preserving documents, interviews, and photographs from the Liberation War of Bangladesh.">
+  <meta name="keywords" content="Liberation War Archive, Bangladesh history, 1971, documents, interviews, photographs">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberation War Archive | Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-base-200 text-base-content">
+
+  <header class="bg-base-100 shadow-sm">
+    <nav class="navbar max-w-6xl mx-auto">
+      <div class="flex-1">
+        <a href="index.html" class="text-xl font-bold">Liberation War Archive</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1 hidden md:flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="interviews.html">Interviews</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="dropdown dropdown-end md:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost">Menu</div>
+          <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="interviews.html">Interviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero min-h-[420px] bg-base-100">
+      <div class="hero-content text-center">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-5xl font-bold">Liberation War Archive</h1>
+          <p class="py-6 text-lg">
+            This website is a simple online archive created to preserve the history, memories,
+            documents, interviews, and photographs of the Liberation War of Bangladesh.
+          </p>
+          <a href="documents.html" class="btn btn-primary">Explore Archive</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold text-center mb-4">About This Archive</h2>
+      <p class="text-center max-w-3xl mx-auto">
+        The Liberation War is one of the most important parts of Bangladesh history.
+        This archive helps students, researchers, and general visitors learn about historical
+        documents, recorded interviews, and photographs from 1971.
+      </p>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold text-center mb-8">Featured Sections</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=700&q=80" alt="Documents" class="h-48 w-full object-cover">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Important Documents</h3>
+            <p>Read simple information about declarations, treaties, official letters, and reports.</p>
+            <div class="card-actions justify-end">
+              <a href="documents.html" class="btn btn-outline btn-primary">View Documents</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=700&q=80" alt="Interviews" class="h-48 w-full object-cover">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Interviews</h3>
+            <p>Learn from interview summaries of freedom fighters, witnesses, and organizers.</p>
+            <div class="card-actions justify-end">
+              <a href="interviews.html" class="btn btn-outline btn-primary">View Interviews</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=700&q=80" alt="Photographs" class="h-48 w-full object-cover">
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Photographs</h3>
+            <p>Browse a simple gallery of historical photo placeholders with category information.</p>
+            <div class="card-actions justify-end">
+              <a href="gallery.html" class="btn btn-outline btn-primary">View Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-10">
+      <div class="alert bg-base-100 shadow">
+        <div>
+          <h3 class="font-bold">Contribute to the Archive</h3>
+          <p>You can contact the archive administrator to share information, documents, or photographs.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer-center bg-base-300 text-base-content p-6 mt-10">
+    <aside>
+      <p>Copyright 2026 Liberation War Archive. Created for learning purpose.</p>
+    </aside>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
